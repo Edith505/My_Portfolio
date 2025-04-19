@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eddy</title>
+    <title>Eddy Manoa - Portfolio</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="/assets/images/M_logo.png" type="image/png">
+    <link rel="icon" href="/assets/images/M_logo.png" type="image/png" sizes="16x16">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
@@ -19,72 +19,73 @@
 
     <!-- JS -->
     <script src="/js/main.js" defer></script>
-
 </head>
 <body>
-<!--=================== Header ====================-->
-<header id="_header">
-    <div class="header-container">
-        <a href="#_header" id="logo"><img src="/assets/images/logo.png" alt="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="social_media">
-            <a href="https://www.facebook.com/medithrand"><img src="/assets/icones/facebook.svg" alt="facebook"></a>
-            <a href="https://www.instagram.com/medithrand/"><img src="/assets/icones/instagram.svg" alt="instagram"></a>
-            <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/"><img src="/assets/icones/linkedin.svg" alt="linkedin"></a>
+<!--=================== Home Section ====================-->
+<div id="_home">
+    <header class="header-container">
+        <div class="container">
+            <a href="#home" id="logo" aria-label="Eddy Manoa Portfolio Home">
+                <img src="/assets/images/logo.png" alt="Eddy Manoa Logo">
+            </a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</header>
+    </header>
+
+    <section id="home">
+        <div class="container home-wrapper">
+            <div class="home-content">
+                <h5>Hello, I'm a <span class="highlight">Tech Enthusiast & Developer</span></h5>
+                <h1>Eddy Manoa</h1>
+                <p>
+                    I hold a Bachelor's degree in Software Engineering from Madagascar and completed a first-year
+                    Master’s program,
+                    gaining solid skills in Android development, Agile methods, Oracle databases, and machine learning.
+                    I'm currently studying IT Networking at a CEGEP in Canada and building strong interest in data
+                    analysis,
+                    machine learning, and modern web development.
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary" download>Download CV</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div id="social-media" aria-label="Social media links">
+                    <a href="https://www.facebook.com/medithrand" aria-label="Facebook profile">
+                        <img src="/assets/icones/facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/medithrand/" aria-label="Instagram profile">
+                        <img src="/assets/icones/instagram.svg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/"
+                       aria-label="LinkedIn profile">
+                        <img src="/assets/icones/linkedin.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="profile-picture">
+                <img src="/assets/images/profile.jpg" alt="Eddy Manoa profile picture">
+            </div>
+        </div>
+    </section>
+</div>
 
 <!--=================== Main ====================-->
 <main id="_main">
-    <!--=================== Home ====================-->
-    <section id="home">
-        <div class="home_left">
-
-        </div>
-        <div class="home_right">
-
-        </div>
-    </section>
-
-    <!--=================== About ====================-->
-    <section id="about">
-
-
-    </section>
-
-    <!--=================== Services ====================-->
-    <section id="services">
-
-
-    </section>
-
-    <!--=================== Portfolio ====================-->
-    <section id="portfolio">
-
-
-    </section>
-
-    <!--=================== Contact ====================-->
-    <section id="contact">
-
-
-    </section>
-
+    <section id="about"></section>
+    <section id="services"></section>
+    <section id="portfolio"></section>
+    <section id="contact"></section>
 </main>
-<!--=================== footer ====================-->
-<footer id="_footer">
 
-</footer>
-
-
+<!--=================== Footer ====================-->
+<footer id="_footer"></footer>
 </body>
 </html>
