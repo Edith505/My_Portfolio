@@ -21,75 +21,185 @@
     <script src="/js/main.js" defer></script>
 </head>
 <body>
+<!--=================== Header ====================-->
+<header class="header-container">
+    <div class="container">
+        <a href="#home" id="logo" aria-label="Eddy Manoa Portfolio Home">
+            <img src="/assets/images/logo.png" alt="Eddy Manoa Logo">
+        </a>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
 <!--=================== Home Section ====================-->
-<div id="_home">
-    <header class="header-container">
-        <div class="container">
-            <a href="#home" id="logo" aria-label="Eddy Manoa Portfolio Home">
-                <img src="/assets/images/logo.png" alt="Eddy Manoa Logo">
-            </a>
-            <nav aria-label="Main navigation">
+<section id="home">
+    <div class="container home-wrapper">
+        <div class="home-content">
+            <p>Welcome to my world</p>
+            <h5>Hi, I'm <span class="highlight">Eddy Manoa</span></h5>
+            <h1>Tech Enthusiast & Freelance Developer</h1>
+            <p>Versatile, curious, and always motivated to take on new challenges!</p>
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-secondary">Contact me</a>
+                <a href="#portfolio" class="btn btn-primary">See my projects</a>
+            </div>
+            <div class="social-media" aria-label="Social media links">
+                <a href="https://www.facebook.com/medithrand" aria-label="Facebook">
+                    <img src="/assets/icones/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/medithrand/" aria-label="Instagram">
+                    <img src="/assets/icones/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/" aria-label="LinkedIn">
+                    <img src="/assets/icones/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Edith505" aria-label="GitHub">
+                    <img src="/assets/icones/github.svg" alt="GitHub">
+                </a>
+            </div>
+        </div>
+        <div class="profile-picture">
+            <img src="/assets/images/Eddy.png" alt="Photo of Eddy Manoa">
+        </div>
+    </div>
+</section>
+
+<!--=================== About ====================-->
+<section id="about">
+    <div class="container about-wrapper">
+        <div class="title">
+            <h1>About</h1>
+        </div>
+        <p>
+            Holder of a Bachelor's degree in software engineering from Madagascar, I also pursued a Master's degree in
+            computer science with solid skills in Android development, agile methods, Oracle databases, and machine
+            learning.
+            <span class="color_me">I am currently studying networking at CEGEP in Quebec</span> while specializing in
+            data analysis, big data, and modern web development.
+        </p>
+        <div class="profile">
+            <div class="personal-details">
+                <h2>Personal Information</h2>
                 <ul>
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>Name <span>Eddy Manoa Randrianarison</span></li>
+                    <li>Date of birth <span>February 1, 1993</span></li>
+                    <li>Address <span>Quebec, Canada</span></li>
+                    <li>Email <span>edithrand505@gmail.com</span></li>
+                    <li>Phone <span>(367) 321-1880</span></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="home">
-        <div class="container home-wrapper">
-            <div class="home-content">
-                <h5>Hello, I'm a <span class="highlight">Tech Enthusiast & Developer</span></h5>
-                <h1>Eddy Manoa</h1>
-                <p>
-                    I hold a Bachelor's degree in Software Engineering from Madagascar and completed a first-year
-                    Master’s program,
-                    gaining solid skills in Android development, Agile methods, Oracle databases, and machine learning.
-                    I'm currently studying IT Networking at a CEGEP in Canada and building strong interest in data
-                    analysis,
-                    machine learning, and modern web development.
-                </p>
-                <div class="btn-group">
-                    <a href="#" class="btn btn-primary" download>Download CV</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-                <div id="social-media" aria-label="Social media links">
-                    <a href="https://www.facebook.com/medithrand" aria-label="Facebook profile">
-                        <img src="/assets/icones/facebook.svg" alt="Facebook profile">
-                    </a>
-                    <a href="https://www.instagram.com/medithrand/" aria-label="Instagram profile">
-                        <img src="/assets/icones/instagram.svg" alt="Instagram profile">
-                    </a>
-                    <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/"
-                       aria-label="LinkedIn profile">
-                        <img src="/assets/icones/linkedin.svg" alt="LinkedIn profile">
-                    </a>
-                    <a href="https://github.com/Edith505"
-                       aria-label="github profile">
-                        <img src="/assets/icones/github.svg" alt="github profile">
-                    </a>
+            </div>
+            <div class="interests">
+                <h2>Interests</h2>
+                <div class="interests-wrapper">
+                    <div class="interest-item">
+                        <img src="/assets/icones/music.png" alt="Music">
+                        <h6>Music</h6>
+                    </div>
+                    <div class="interest-item">
+                        <img src="/assets/icones/ia.png" alt="Technology">
+                        <h6>Technology</h6>
+                    </div>
+                    <div class="interest-item">
+                        <img src="/assets/icones/book.png" alt="Reading">
+                        <h6>Reading</h6>
+                    </div>
+                    <div class="interest-item">
+                        <img src="/assets/icones/avion.png" alt="Travel">
+                        <h6>Travel</h6>
+                    </div>
                 </div>
             </div>
-            <div class="profile-picture">
-                <img src="/assets/images/profile.jpg" alt="Eddy Manoa profile picture">
+        </div>
+    </div>
+</section>
+
+<!--=================== Skills ====================-->
+<section id="skills">
+    <div class="container">
+        <div class="title">
+            <h1>Skills</h1>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React, Node.js</p>
+            </div>
+            <div class="skill-card">
+                <h3>Mobile</h3>
+                <p>Android (Java/Kotlin), Flutter</p>
+            </div>
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <p>Oracle, MySQL, PostgreSQL, MongoDB</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Analysis</h3>
+                <p>Python, Pandas, Machine Learning, Big Data</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Methods</h3>
+                <p>Git, Docker, Agile methods, Jira</p>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
-<!--=================== Main ====================-->
-<main id="_main">
-    <section id="about"></section>
-    <section id="services"></section>
-    <section id="portfolio"></section>
-    <section id="contact"></section>
-</main>
+<!--=================== Portfolio ====================-->
+<section id="portfolio">
+    <div class="container">
+        <div class="title">
+            <h1>Projects</h1>
+            <div class="personal-projects">
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--=================== Contact ====================-->
+<section id="contact">
+    <div class="container">
+        <div class="title">
+            <h1>Contact</h1>
+        </div>
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+    <div class="social-media" aria-label="Social media links">
+        <a href="https://www.facebook.com/medithrand" aria-label="Facebook">
+            <img src="/assets/icones/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/medithrand/" aria-label="Instagram">
+            <img src="/assets/icones/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/" aria-label="LinkedIn">
+            <img src="/assets/icones/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Edith505" aria-label="GitHub">
+            <img src="/assets/icones/github.svg" alt="GitHub">
+        </a>
+    </div>
+</section>
 
 <!--=================== Footer ====================-->
-<footer id="_footer"></footer>
+<footer id="footer">
+    <div class="container">
+        <p>© 2025 Eddy Manoa. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>

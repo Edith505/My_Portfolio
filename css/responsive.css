@@ -1,20 +1,33 @@
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .home-wrapper {
         grid-template-columns: 1fr;
         text-align: center;
-        height: 100%;
     }
 
     .home-content {
         order: 2;
         align-items: center;
-        max-width: 100%; /* Full width on mobile */
+        max-width: 100%;
     }
 
     .profile-picture {
         order: 1;
-        max-width: 250px; /* Smaller image on μικρότερες οθόνες */
+        max-width: 250px;
         margin: 0 auto;
     }
 
@@ -28,6 +41,14 @@
 
     .nav-link {
         font-size: 0.9rem;
+    }
+
+    .profile {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-wrapper {
+        flex-wrap: wrap;
     }
 }
 
