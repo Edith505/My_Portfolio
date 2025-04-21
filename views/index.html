@@ -88,13 +88,36 @@
         <div class="profile">
             <div class="personal-details">
                 <h2>Personal Information</h2>
-                <ul>
-                    <li>Name <span>Eddy Manoa Randrianarison</span></li>
-                    <li>Date of birth <span>February 1, 1993</span></li>
-                    <li>Address <span>Quebec, Canada</span></li>
-                    <li>Email <span>edithrand505@gmail.com</span></li>
-                    <li>Phone <span>(367) 321-1880</span></li>
-                </ul>
+                <table class="profile-table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Eddy Manoa Randrianarison</td>
+                    </tr>
+                    <tr>
+                        <th>Date of birth</th>
+                        <td>February 1, 1993</td>
+                    </tr>
+                    <tr>
+                        <th>Nationality</th>
+                        <td>Malagasy</td>
+                    </tr>
+                    <tr>
+                        <th>Language</th>
+                        <td>English, French, Malagasy</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>Quebec, Canada</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>edithrand505@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <td>(367) 321-1880</td>
+                    </tr>
+                </table>
             </div>
             <div class="interests">
                 <h2>Interests</h2>
@@ -104,8 +127,8 @@
                         <h6>Music</h6>
                     </div>
                     <div class="interest-item">
-                        <img src="/assets/icones/ia.png" alt="Technology">
-                        <h6>Technology</h6>
+                        <img src="/assets/icones/echecs.png" alt="echecs">
+                        <h6>Chess</h6>
                     </div>
                     <div class="interest-item">
                         <img src="/assets/icones/book.png" alt="Reading">
@@ -114,6 +137,14 @@
                     <div class="interest-item">
                         <img src="/assets/icones/avion.png" alt="Travel">
                         <h6>Travel</h6>
+                    </div>
+                    <div class="interest-item">
+                        <img src="/assets/icones/sport.png" alt="Sports">
+                        <h6>Sport</h6>
+                    </div>
+                    <div class="interest-item">
+                        <img src="/assets/icones/game.png" alt="gameur">
+                        <h6>Game</h6>
                     </div>
                 </div>
             </div>
@@ -172,26 +203,35 @@
         <div class="title">
             <h1>Contact</h1>
         </div>
-        <form action="#" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-    </div>
-    <div class="social-media" aria-label="Social media links">
-        <a href="https://www.facebook.com/medithrand" aria-label="Facebook">
-            <img src="/assets/icones/facebook.svg" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/medithrand/" aria-label="Instagram">
-            <img src="/assets/icones/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/" aria-label="LinkedIn">
-            <img src="/assets/icones/linkedin.svg" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/Edith505" aria-label="GitHub">
-            <img src="/assets/icones/github.svg" alt="GitHub">
-        </a>
+        <div class="contact-content">
+            <div class="contact-me" aria-label="Social media links">
+                <h1>How to contact me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae debitis dignissimos maxime minima praesentium repellat ut voluptate! Ad, error!</p>
+                <div class="other-contact">
+                </div>
+                <div class="contact-social-media">
+                    <a href="https://www.facebook.com/medithrand" aria-label="Facebook">
+                        <img src="/assets/icones/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/medithrand/" aria-label="Instagram">
+                        <img src="/assets/icones/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/" aria-label="LinkedIn">
+                        <img src="/assets/icones/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Edith505" aria-label="GitHub">
+                        <img src="/assets/icones/github.svg" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+            <form action="#" method="POST" class="contact-form">
+                <h1>Send me a message</h1>
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
     </div>
 </section>
 

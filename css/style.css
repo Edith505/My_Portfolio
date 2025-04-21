@@ -31,15 +31,12 @@ body {
     width: 100%;
 }
 
-/* Hauteur de 100vh pour chaque section
-#about, #skills, #portfolio, #contact {
+
+#home, #about, #skills, #portfolio, #contact {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 4rem 0;
 }
-*/
+
 
 /* Header Styles */
 .header-container {
@@ -48,14 +45,6 @@ body {
     height: 80px;
     transition: var(--transition);
     z-index: 1000;
-}
-
-.header-container.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .header-container .container {
@@ -70,10 +59,6 @@ body {
     transition: var(--transition);
 }
 
-#logo img:hover {
-    opacity: 0.9;
-}
-
 nav ul {
     display: flex;
     list-style: none;
@@ -84,7 +69,7 @@ nav ul {
     position: relative;
     color: var(--white);
     font-weight: 500;
-    font-size: clamp(0.9rem, 2vw, 1rem);
+    /*font-size: clamp(0.9rem, 2vw, 1rem);*/
     transition: var(--transition);
 }
 
@@ -113,7 +98,6 @@ nav ul {
 
 /* Home Section */
 #home {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 2rem 0;
@@ -252,7 +236,6 @@ nav ul {
 
 .about-wrapper p {
     text-align: center;
-    margin: 0 2.5rem 3rem;
 }
 
 
@@ -260,27 +243,38 @@ nav ul {
 .profile {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
 }
 
-.personal-details ul {
-    list-style: none;
-    padding: 0;
+.profile h2 {
+    margin-bottom: 1.5rem;
 }
 
-.personal-details li {
-    font-size: 1.1rem;
+table, tr, td, th {
+    border: none;
+    outline: none;
+}
+
+.profile-table th, td {
+    padding: 0.5em;
+}
+
+.profile-table tr th {
     color: var(--green);
-    margin-bottom: 0.5rem;
+    text-align: left;
+    font-weight: 600;
 }
 
-.personal-details li span {
-    color: var(--white);
+.profile-table tr td {
+    padding-left: 3rem;
 }
+
 
 /* Styliser les centres d'intérêt */
 .interests-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -319,10 +313,11 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
+
 }
 
 .skill-card {
-    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
     border-radius: var(--border-radius);
     transition: var(--transition);
@@ -330,7 +325,8 @@ nav ul {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 5px 20px 2px rgba(24, 36, 50, 0.87);
+    box-shadow: 1px 5px 20px 2px rgba(24, 36, 50, 0.87);
 }
 
 .skill-card h3 {
@@ -350,26 +346,27 @@ nav ul {
 #contact {
     padding: 4rem 0;
     animation: fadeIn 1s ease-out;
-    display: flex;
-    flex-direction: column;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
+    gap: 2rem;
+}
+
+#contact h1 {
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 1rem;
+    padding: 0.5rem;
     border: none;
     border-bottom: 1px solid var(--white);
     color: var(--white);
     font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--dark-blue);
 }
 
 .contact-form input:focus,
@@ -380,6 +377,19 @@ nav ul {
 
 .contact-form button {
     align-self: flex-start;
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    max-width: 600px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Footer */
