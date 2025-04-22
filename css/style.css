@@ -27,13 +27,13 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing);
+    padding: 0;
     width: 100%;
 }
 
 
 #home, #about, #skills, #portfolio, #contact {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     padding: 4rem 0;
 }
 
@@ -69,7 +69,6 @@ nav ul {
     position: relative;
     color: var(--white);
     font-weight: 500;
-    /*font-size: clamp(0.9rem, 2vw, 1rem);*/
     transition: var(--transition);
 }
 
@@ -103,6 +102,7 @@ nav ul {
     padding: 2rem 0;
 }
 
+
 .home-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -114,9 +114,9 @@ nav ul {
 .home-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     animation: fadeIn 1s ease-out;
     max-width: 700px;
+
 }
 
 .home-content h5 {
@@ -238,22 +238,29 @@ nav ul {
     text-align: center;
 }
 
+.about-wrapper > p {
+    margin: 1rem 10rem;
+    line-height: 1.8;
+}
 
 /* Styliser les listes dans Personal Information */
 .profile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10rem;
+}
 
+.profile-table {
+    flex: 4;
+}
+
+.interests {
+    flex: 6;
 }
 
 .profile h2 {
-    margin-bottom: 1.5rem;
-}
-
-table, tr, td, th {
-    border: none;
-    outline: none;
+    margin: 1.5rem 0;
 }
 
 .profile-table th, td {
@@ -352,11 +359,19 @@ table, tr, td, th {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 2rem;
+    -webkit-box-shadow: 1px 5px 20px 2px rgba(24, 36, 50, 0.87);
+    box-shadow: 1px 5px 20px 2px rgba(24, 36, 50, 0.87);
 }
 
 #contact h1 {
     text-transform: uppercase;
     font-weight: normal;
+}
+
+#contact h2 {
+    font-weight: 500;
+    margin: 1rem 0;
 }
 
 .contact-form input,
@@ -369,6 +384,17 @@ table, tr, td, th {
     background-color: var(--dark-blue);
 }
 
+.contact-social-media a img {
+    max-width: 30px;
+    margin: 0.5rem;
+    transition: var(--transition);
+}
+
+.contact-social-media a img:hover {
+    transform: translateY(-4px);
+    opacity: 0.9;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
@@ -376,25 +402,53 @@ table, tr, td, th {
 }
 
 .contact-form button {
-    align-self: flex-start;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
 }
 
-.contact-me{
+.other-contact h2 span {
+    font-size: 16px;
+    display: block;
+    font-weight: lighter;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+
+.contact-form{
+    flex : 1;
+    align-items: center;
+}
+
+.contact-form input{
+    width: 100%;
+}
+
+.contact-me {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
     max-width: 600px;
+    flex: 4;
+    padding: 2rem;
 }
 
-.contact-content {
-    display: flex;
-    justify-content: space-around;
+.contact-me p {
+    font-weight: lighter;
+    margin: 1rem 2rem 0;
 }
+
+
 
 /* Footer */
 #footer {
     padding: 2rem 0;
     text-align: center;
-    background-color: var(--dark-blue);
+    height: 80px;
+    box-shadow: 1px 5px 20px 2px rgba(24, 36, 50, 0.3);
 }
