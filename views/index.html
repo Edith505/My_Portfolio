@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eddy Manoa - Portfolio</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="/assets/images/M_logo.png" type="image/png" sizes="12x14">
+    <link rel="icon" href="/assets/images/M_logo.png" type="image/png" sizes="10x10">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,6 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
 
     <!-- JS -->
     <script src="/js/main.js" defer></script>
@@ -36,118 +35,80 @@
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </header>
 
 <!--=================== Home Section ====================-->
 <section id="home">
-    <div class="container home-wrapper">
-        <div class="home-content">
-            <p>Welcome to my world</p>
-            <h5>Hi, I'm <span class="highlight">Eddy Manoa</span></h5>
-            <h1>Tech Enthusiast & Freelance Developer</h1>
-            <p>Versatile, curious, and always motivated to take on new challenges!</p>
-            <div class="btn-group">
-                <a href="#contact" class="btn btn-secondary">Contact me</a>
-                <a href="#portfolio" class="btn btn-primary">See my projects</a>
+    <div class="section-bg"></div>
+    <div class="container">
+        <div class="home-wrapper">
+            <div class="home-content">
+                <h1 class="name-title">Hi, I'm <span class="highlight">Eddy Manoa</span></h1>
+                <h2 class="subtitle">Tech Enthusiast & Freelance</h2>
+                <p class="description">Versatile, curious, and always motivated to take on new tech challenges!</p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="/views/cv.html" class="btn btn-primary">View My Resume</a>
+                </div>
+                <div class="social-media" aria-label="Social media links">
+                    <a href="https://www.facebook.com/medithrand" class="social-link" aria-label="Facebook"><img src="/assets/icones/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/medithrand/" class="social-link" aria-label="Instagram"><img src="/assets/icones/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/" class="social-link" aria-label="LinkedIn"><img src="/assets/icones/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://github.com/Edith505" class="social-link" aria-label="GitHub"><img src="/assets/icones/github.svg" alt="GitHub"></a>
+                    <a href="https://www.youtube.com/@edithrand3143" class="social-link" aria-label="YouTube"><img src="/assets/icones/youtube.svg" alt="YouTube"></a>
+                </div>
             </div>
-            <div class="social-media" aria-label="Social media links">
-                <a href="https://www.facebook.com/medithrand" aria-label="Facebook">
-                    <img src="/assets/icones/facebook.svg" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/medithrand/" aria-label="Instagram">
-                    <img src="/assets/icones/instagram.svg" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/" aria-label="LinkedIn">
-                    <img src="/assets/icones/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Edith505" aria-label="GitHub">
-                    <img src="/assets/icones/github.svg" alt="GitHub">
-                </a>
-                 <a href="https://www.youtube.com/@edithrand3143" aria-label="Youtube">
-                    <img src="/assets/icones/youtube.svg" alt="Youtube">
-                </a>
+            <div class="profile-picture">
+                <img src="/assets/images/Eddy.png" alt="Photo of Eddy Manoa" class="profile-img">
             </div>
-        </div>
-        <div class="profile-picture">
-            <img src="/assets/images/Eddy.png" alt="Photo of Eddy Manoa">
         </div>
     </div>
 </section>
 
 <!--=================== About ====================-->
 <section id="about">
-    <div class="container about-wrapper">
-        <div class="title">
-            <h1>About</h1>
+    <div class="section-bg"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
         </div>
-        <p>
-  <p>
-    I'm a tech enthusiast with a strong foundation in software engineering and a Master's-level background in computer science. Over the years, I've built hands-on experience in Android app development, agile project management, database systems like Oracle, and machine learning. Currently based in Quebec, I'm sharpening my skills in networking and diving deeper into data analytics, big data, and modern full-stack web technologies.
-</p>
-
+        <p class="about-description">
+            I'm a tech enthusiast with a strong foundation in software engineering and a Master's-level background in
+            computer science. Over the years, I've built hands-on experience in Android app development, agile project
+            management, database systems like Oracle, and machine learning. Currently based in Quebec, I'm sharpening my
+            skills in networking and diving deeper into data analytics, big data, and modern full-stack web
+            technologies.
         </p>
-        <div class="profile">
+
+        <div class="profile-section">
             <div class="personal-details">
-                <h2>Personal Information</h2>
-                <table class="profile-table">
-                    <tr>
-                        <th>Name</th>
-                        <td>Eddy Manoa Randrianarison</td>
-                    </tr>
-                    <tr>
-                        <th>Date of birthday</th>
-                        <td>February 1, 1993</td>
-                    </tr>
-                    <tr>
-                        <th>Nationality</th>
-                        <td>Malagasy</td>
-                    </tr>
-                    <tr>
-                        <th>Language</th>
-                        <td>English, French, Malagasy</td>
-                    </tr>
-                    <tr>
-                        <th>Address</th>
-                        <td>Quebec, Canada</td>
-                    </tr>
-                    <tr>
-                        <th>Email</th>
-                        <td>edithrand505@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th>Phone</th>
-                        <td>(367) 321-1880</td>
-                    </tr>
+                <h3>Personal Information</h3>
+                <table class="info-table">
+                    <tr><th>Name</th><td>Eddy Manoa Randrianarison</td></tr>
+                    <tr><th>Date of birth</th><td>February 1, 1993</td></tr>
+                    <tr><th>Nationality</th><td>Malagasy</td></tr>
+                    <tr><th>Languages</th><td>English, French, Malagasy</td></tr>
+                    <tr><th>Address</th><td>Quebec, Canada</td></tr>
+                    <tr><th>Email</th><td>edithrand505@gmail.com</td></tr>
+                    <tr><th>Phone</th><td>(367) 321-1880</td></tr>
                 </table>
             </div>
+
             <div class="interests">
-                <h2>Interests</h2>
-                <div class="interests-wrapper">
-                    <div class="interest-item">
-                        <img src="/assets/icones/music.png" alt="Music">
-                        <h6>Music</h6>
-                    </div>
-                    <div class="interest-item">
-                        <img src="/assets/icones/echecs.png" alt="echecs">
-                        <h6>Chess</h6>
-                    </div>
-                    <div class="interest-item">
-                        <img src="/assets/icones/book.png" alt="Reading">
-                        <h6>Reading</h6>
-                    </div>
-                    <div class="interest-item">
-                        <img src="/assets/icones/avion.png" alt="Travel">
-                        <h6>Travel</h6>
-                    </div>
-                    <div class="interest-item">
-                        <img src="/assets/icones/sport.png" alt="Sports">
-                        <h6>Sport</h6>
-                    </div>
-                    <div class="interest-item">
-                        <img src="/assets/icones/game.png" alt="gameur">
-                        <h6>Game</h6>
-                    </div>
+                <h3>Interests</h3>
+                <div class="interests-grid">
+                    <div class="interest-item"><img src="/assets/icones/music.png" alt="Music"><h4>Music</h4></div>
+                    <div class="interest-item"><img src="/assets/icones/echecs.png" alt="Chess"><h4>Chess</h4></div>
+                    <div class="interest-item"><img src="/assets/icones/book.png" alt="Reading"><h4>Reading</h4></div>
+                    <div class="interest-item"><img src="/assets/icones/avion.png" alt="Travel"><h4>Travel</h4></div>
+                    <div class="interest-item"><img src="/assets/icones/sport.png" alt="Sports"><h4>Sports</h4></div>
+                    <div class="interest-item"><img src="/assets/icones/game.png" alt="Gaming"><h4>Gaming</h4></div>
                 </div>
             </div>
         </div>
@@ -156,12 +117,13 @@
 
 <!--=================== Skills ====================-->
 <section id="skills">
+    <div class="section-bg"></div>
     <div class="container">
-        <div class="title">
+        <div class="section-title">
             <h1>Skills</h1>
         </div>
 
-        <div class="skills-grid">
+        <div class="skills-flex">
             <div class="skill-card">
                 <img src="/assets/images/programming-language.png" alt="Programming" class="skill-icon">
                 <h3>Programming Languages</h3>
@@ -171,7 +133,7 @@
             <div class="skill-card">
                 <img src="/assets/images/frontend.png" alt="Frontend development" class="skill-icon">
                 <h3>Frontend Development</h3>
-                <p>HTML, CSS, JavaScript, React</p>
+                <p>HTML, CSS, JavaScript, Bootstrap, Tailwind, React</p>
             </div>
 
             <div class="skill-card">
@@ -227,58 +189,58 @@
 
 <!--=================== Portfolio ====================-->
 <section id="portfolio">
+    <div class="section-bg"></div>
     <div class="container">
-        <div class="title">
-            <h1>Projects</h1>
-            <div class="personal-projects">
-
-            </div>
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="portfolio-message">
+            <h3>Section under construction</h3>
+            <p>My projects will be available here soon. Stay tuned!</p>
         </div>
     </div>
-
 </section>
 
 <!--=================== Contact ====================-->
 <section id="contact">
+    <div class="section-bg"></div>
     <div class="container">
-        <div class="title">
+        <div class="section-title">
             <h1>Contact</h1>
         </div>
         <div class="contact-content">
-            <div class="contact-me" aria-label="Social media links">
-                <h1>How to contact me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae debitis dignissimos maxime
-                    minima praesentium repellat ut voluptate! Ad, error!</p>
-                <div class="other-contact">
-                    <h2>Email<span>edithrand505@gmail.com</span></h2>
-                    <h2>Phone <span>(367) 321-1880</span></h2>
-                </div>
-                <div class="contact-social-media">
-                    <h2>Or, on social reseau</h2>
-                    <a href="https://www.facebook.com/medithrand" aria-label="Facebook">
-                        <img src="/assets/icones/facebook.svg" alt="Facebook">
-                    </a>
-                    <a href="https://www.instagram.com/medithrand/" aria-label="Instagram">
-                        <img src="/assets/icones/instagram.svg" alt="Instagram">
-                    </a>
-                    <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/" aria-label="LinkedIn">
-                        <img src="/assets/icones/linkedin.svg" alt="LinkedIn">
-                    </a>
-                    <a href="https://github.com/Edith505" aria-label="GitHub">
-                        <img src="/assets/icones/github.svg" alt="GitHub">
-                    </a>
-                     <a href="https://www.youtube.com/@edithrand3143" aria-label="Youtube">
-                    <img src="/assets/icones/youtube.svg" alt="Youtube">
-                </a>
+            <div class="contact-info" aria-label="Social media links">
+                <h3>How to contact me</h3>
+                <p>Whether you have a project in mind, need a developer for your team, or just want to connect, feel free to reach out!
+                    I'm always open to discussing new opportunities and collaborations in tech.</p>
+                <p class="contact-details">
+                    Email Address: <em>edithrand505@gmail.com</em><br>
+                    Phone Number: <em>(367) 321-1880</em>
+                </p>
+                <h2>Or via social media</h2>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/medithrand" class="social-link" aria-label="Facebook"><img src="/assets/icones/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/medithrand/" class="social-link" aria-label="Instagram"><img src="/assets/icones/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/eddy-manoa-randrianarison-a0911215b/" class="social-link" aria-label="LinkedIn"><img src="/assets/icones/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://github.com/Edith505" class="social-link" aria-label="GitHub"><img src="/assets/icones/github.svg" alt="GitHub"></a>
+                    <a href="https://www.youtube.com/@edithrand3143" class="social-link" aria-label="YouTube"><img src="/assets/icones/youtube.svg" alt="YouTube"></a>
                 </div>
             </div>
-            <form action="#" method="POST" class="contact-form">
-                <h1>Send me a message</h1>
-                <input type="text" name="name" placeholder="Your name" required>
-                <input type="email" name="email" placeholder="Your email" required>
-                <input type="text" name="phone" placeholder="Your phone" required>
-                <input type="text" name="message" placeholder="Your message" required>
-                <button type="submit" class="btn btn-primary">Send now</button>
+            <form action="#" method="POST" class="contact-form" aria-label="Contact form">
+                <h3>Send Me a Message</h3>
+                <div class="form-group">
+                    <input id="name" type="text" name="name" class="form-control" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <input id="email" type="email" name="email" class="form-control" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <input id="phone" type="text" name="phone" class="form-control" placeholder="Your phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-control" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </div>
     </div>
