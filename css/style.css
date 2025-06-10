@@ -120,6 +120,11 @@ nav ul {
     transition: var(--transition);
 }
 
+#logo img {
+    width: 120px;
+    height: auto;
+
+}
 /* Sections */
 section {
     min-height: 100vh;
@@ -137,10 +142,7 @@ section {
     background: radial-gradient(circle at 50% 50%, var(--primary-blue) 0%, transparent 70%);
 }
 
-#logo img {
-    width: 120px;
-    transition: var(--transition);
-}
+
 
 /* Home Section */
 #home {
@@ -231,7 +233,7 @@ section {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 5px 20px rgba(0, 212, 255, 0.2);
 }
 
 .btn-secondary {
@@ -294,7 +296,7 @@ section {
 /* Title Styles */
 .section-title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 
@@ -488,6 +490,10 @@ section {
 .skill-card p {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
+}
+
+.form-group label{
+    display: none;
 }
 
 /* Portfolio Section */
